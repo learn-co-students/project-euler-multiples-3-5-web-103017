@@ -12,10 +12,10 @@
 # end
 
 def collect_multiples(limit)
-  i = 0
+  # i = 0
   sum = []
-  while i != limit-1
-    i += 1
+  (0..limit) do |i|
+    # i += 1
     if i%3==0 || i%5==0
       sum << i
     end
