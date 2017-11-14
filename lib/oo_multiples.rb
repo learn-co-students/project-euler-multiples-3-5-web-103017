@@ -10,6 +10,6 @@ class Multiples
   end
 
   def sum_multiples
-    Array(0...@limit).select {|n| (n % 3 == 0 || n % 5 == 0)}.inject {|sum, n| sum + n}
+    Array(0...@limit).inject {|n| (n % 3 == 0 || n % 5 == 0) ? sum + n : n}#.inject {|sum, n| sum + n}
   end
 end
