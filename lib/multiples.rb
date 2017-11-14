@@ -1,7 +1,5 @@
 def collect_multiples(limit)
-	range = (1...limit)
-
-	range = range.select do |num|
+	(1...limit).select do |num|
 		num % 5 == 0 || num % 3 == 0
 	end
 end
